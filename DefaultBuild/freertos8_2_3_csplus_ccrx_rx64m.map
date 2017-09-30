@@ -1,0 +1,103 @@
+Renesas Optimizing Linker (W2.06.00 )             30-Sep-2017 16:01:32
+
+*** Options ***
+
+-subcommand=DefaultBuild\freertos8_2_3_csplus_ccrx_rx64m.clnk
+-library=DefaultBuild\freertos8_2_3_csplus_ccrx_rx64m.lib
+-input=DefaultBuild\r_cg_main.obj
+-input=DefaultBuild\r_cg_dbsct.obj
+-input=DefaultBuild\r_cg_intprg.obj
+-input=DefaultBuild\r_cg_resetprg.obj
+-input=DefaultBuild\r_cg_sbrk.obj
+-input=DefaultBuild\r_cg_vecttbl.obj
+-input=DefaultBuild\r_cg_hardware_setup.obj
+-input=DefaultBuild\r_cg_cgc.obj
+-input=DefaultBuild\r_cg_cgc_user.obj
+-input=DefaultBuild\ApplicationHook.obj
+-input=DefaultBuild\heap_1.obj
+-input=DefaultBuild\port.obj
+-input=DefaultBuild\port_asm.obj
+-input=DefaultBuild\croutine.obj
+-input=DefaultBuild\event_groups.obj
+-input=DefaultBuild\list.obj
+-input=DefaultBuild\queue.obj
+-input=DefaultBuild\tasks.obj
+-input=DefaultBuild\timers.obj
+-input=DefaultBuild\main_apl.obj
+-noprelink
+-output=DefaultBuild\freertos8_2_3_csplus_ccrx_rx64m.abs
+-list=DefaultBuild\freertos8_2_3_csplus_ccrx_rx64m.map
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFC00000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFC00100,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00000004  0000b403      b400   1
+R_1
+                                  0000b404  0000b404         0   1
+B_2
+                                  0000b404  0000b803       400   2
+R_2
+                                  0000b804  0000b804         0   1
+B
+                                  0000b804  0000b917       114   4
+R
+                                  0000b918  0000b95b        44   4
+SU
+                                  0000b95c  0000ba5b       100   4
+SI
+                                  0000ba5c  0000bd5b       300   4
+$ADDR_C_120040
+                                  00120040  00120043         4   1
+$ADDR_C_120048
+                                  00120048  0012004b         4   1
+$ADDR_C_120050
+                                  00120050  0012006f        20   1
+PResetPRG
+                                  ffc00000  ffc0003d        3e   1
+C_1
+                                  ffc00100  ffc00100         0   1
+C_2
+                                  ffc00100  ffc00100         0   1
+C
+                                  ffc00100  ffc00133        34   4
+C$DSEC
+                                  ffc00134  ffc00157        24   4
+C$BSEC
+                                  ffc00158  ffc0016f        18   4
+C$INIT
+                                  ffc00170  ffc00170         0   1
+C$VTBL
+                                  ffc00170  ffc00170         0   1
+C$VECT
+                                  ffc00170  ffc0056f       400   4
+D_1
+                                  ffc00570  ffc00570         0   1
+D_2
+                                  ffc00570  ffc00570         0   1
+D
+                                  ffc00570  ffc005b3        44   4
+P
+                                  ffc005b4  ffc02805      2252   1
+PIntPRG
+                                  ffc02806  ffc02817        12   1
+W_1
+                                  ffc02818  ffc02818         0   1
+W_2
+                                  ffc02818  ffc02818         0   1
+W
+                                  ffc02818  ffc02818         0   1
+L
+                                  ffc02818  ffc02833        1c   4
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
